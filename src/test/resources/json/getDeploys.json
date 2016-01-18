@@ -1,0 +1,10 @@
+[
+  {
+    "id": "000000000000testDeployId",
+    "url": "https://app.wercker.com/api/v3/deploys/000000000000testDeployId",
+    "status": "finished",
+    "result": "passed",
+    "createdAt": "2016-01-01T09:47:37.228Z",
+    "progress": 100
+  }
+]

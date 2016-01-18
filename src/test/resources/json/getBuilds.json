@@ -1,0 +1,15 @@
+[
+  {
+    "id": "0000000000000testBuildId",
+    "url": "https://app.wercker.com/api/v3/builds/0000000000000testBuildId",
+    "branch": "master",
+    "commitHash": "00000000000000000000000000testCommitHash",
+    "createdAt": "2016-01-01T09:47:17.192Z",
+    "finishedAt": "2016-01-01T09:47:37.162Z",
+    "message": "testMessage",
+    "progress": 100,
+    "result": "passed",
+    "startedAt": "2016-01-01T09:47:18.829Z",
+    "status": "finished"
+  }
+]

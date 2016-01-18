@@ -1,0 +1,10 @@
+{
+  "id": "0000000000000testTokenId",
+  "url": "https://app.wercker.com/api/v3/tokens/0000000000000testTokenId",
+  "name": "testUpdateTokenName",
+  "token": null,
+  "hashedToken": "0000000000000000000000000000000000000000000000000testHashedToken",
+  "lastCharacters": "testLast",
+  "createdAt": "2016-01-01T03:25:24.814Z",
+  "lastUsedAt": null
+}

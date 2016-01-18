@@ -1,0 +1,23 @@
+[
+  {
+    "id": "000000000000000testAppId",
+    "url": "https://app.wercker.com/api/v3/applications/testUser/testApp",
+    "name": "testApp",
+    "owner": {
+      "type": "wercker",
+      "name": "testUser",
+      "avatar": {
+        "gravatar": "00000000000000000testGravatar"
+      },
+      "userId": "00000000000000testUserId",
+      "meta": {
+        "username": "testUser",
+        "werckerEmployee": false
+      }
+    },
+    "createdAt": "2015-11-06T14:53:10.023Z",
+    "updatedAt": "2016-01-01T09:48:28.006Z",
+    "privacy": "private",
+    "stack": 5
+  }
+]

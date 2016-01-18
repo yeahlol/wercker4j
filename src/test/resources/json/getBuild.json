@@ -1,0 +1,35 @@
+{
+  "id": "0000000000000testBuildId",
+  "url": "https://app.wercker.com/api/v3/builds/0000000000000testBuildId",
+  "application": {
+    "id": "000000000000000testAppId",
+    "url": "https://app.wercker.com/api/v3/applications/testUser/testApp",
+    "name": "testApp",
+    "owner": {
+      "type": "wercker",
+      "name": "testUser",
+      "avatar": {
+        "gravatar": "00000000000000000000testGravatar"
+      },
+      "userId": "00000000000000testUserId",
+      "meta": {
+        "username": "testUser",
+        "werckerEmployee": false
+      }
+    },
+    "createdAt": "2015-11-06T14:53:10.023Z",
+    "updatedAt": "2016-01-01T09:48:28.006Z",
+    "privacy": "private",
+    "stack": 5
+  },
+  "branch": "master",
+  "commitHash": "00000000000000000000000000testCommitHash",
+  "createdAt": "2015-11-29T14:24:48.919Z",
+  "finishedAt": "2015-11-29T14:25:36.748Z",
+  "message": "testMessage",
+  "progress": 100,
+  "result": "passed",
+  "startedAt": "2015-11-29T14:24:49.674Z",
+  "status": "finished",
+  "envVars": []
+}
