@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Wercker4j by yeahlol</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Wercker4j</h1>
+        <p>A Java library for the Wercker API</p>
+
+        <p class="view"><a href="https://github.com/yeahlol/wercker4j">View the Project on GitHub <small>yeahlol/wercker4j</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/yeahlol/wercker4j/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/yeahlol/wercker4j/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/yeahlol/wercker4j">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="wercker4j" class="anchor" href="#wercker4j" aria-hidden="true"><span class="octicon octicon-link"></span></a>Wercker4J</h1>
+
+<p>Wercker4J is java client library for <a href="http://devcenter.wercker.com/api/index.html">wercker API</a>.</p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<pre><code>// Create a new client
+String token = "..."
+Wercker4jClient client = new Wercker4jClient(token);
+</code></pre>
+
+<h3>
+<a id="application" class="anchor" href="#application" aria-hidden="true"><span class="octicon octicon-link"></span></a>Application</h3>
+
+<pre><code>// Get a appliation detail
+String owner = "...";
+String appName = "...";
+Application application = client.getApplication(new GetApplicationOption(owner, appName));
+
+// Get all appliations of user
+List&lt;ApplicationSummary&gt; applicationList = client.getApplications(new GetApplicationsOption(owner));
+</code></pre>
+
+<h3>
+<a id="build" class="anchor" href="#build" aria-hidden="true"><span class="octicon octicon-link"></span></a>Build</h3>
+
+<pre><code>// Trigger a new build for an application
+String applicationId = "...";
+client.createBuild(new CreateBuildOption(applicationId));
+
+// Get a build detail of an application
+String buildId = "...";
+Build build = client.getBuild(new GetBuildOption(buildId));
+
+// Get all builds of an application
+String owner = "...";
+String appName = "...";
+List&lt;BuildSummary&gt; buildList = client.getBuilds(new GetBuildsOption(owner, appName));
+</code></pre>
+
+<h3>
+<a id="deploy" class="anchor" href="#deploy" aria-hidden="true"><span class="octicon octicon-link"></span></a>Deploy</h3>
+
+<pre><code>// Get a deploy detail of an application
+String deployId = "...";
+Deploy deploy = client.getDeploy(new GetDeployOption(deployId));
+
+// Get all deploys of an application
+String owner = "...";
+String appName = "...";
+List&lt;DeploySummary&gt; deployList = client.getDeploys(new GetDeploysOption(owner, appName));
+</code></pre>
+
+<h3>
+<a id="token" class="anchor" href="#token" aria-hidden="true"><span class="octicon octicon-link"></span></a>Token</h3>
+
+<pre><code>// Trigger a new token
+String newTokenName = "...";
+Token token = client.createToken(new CreateTokenOption(newTokenName));
+
+// Get a token detail
+String tokenId = "...";
+Token token = client.getToken(new GetTokenOption(tokenId));
+
+// Get all tokens
+ List&lt;TokenSummary&gt; tokenList = client.getTokens();
+</code></pre>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/yeahlol">yeahlol</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-72583105-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
