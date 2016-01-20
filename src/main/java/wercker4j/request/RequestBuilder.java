@@ -280,7 +280,7 @@ public class RequestBuilder {
     /**
      * get will do HTTP GET
      *
-     * @param httpGet
+     * @param httpGet request object for HTTP GET
      * @return responseWrapper
      * @throws Wercker4jException fault statusCode and IO error
      */
@@ -311,7 +311,7 @@ public class RequestBuilder {
     /**
      * post will do HTTP POST
      *
-     * @param httpPost
+     * @param httpPost request object for HTTP POST
      * @return responseWrapper
      * @throws Wercker4jException fault statusCode and IO error
      */
@@ -342,7 +342,7 @@ public class RequestBuilder {
     /**
      * patch will do HTTP PATCH
      *
-     * @param httpPatch
+     * @param httpPatch request object for HTTP PATCH
      * @return responseWrapper
      * @throws Wercker4jException fault statusCode and IO error
      */
@@ -373,8 +373,7 @@ public class RequestBuilder {
     /**
      * delete will do HTTP DELETE
      *
-     * @param httpDelete
-     * @return responseWrapper
+     * @param httpDelete request object for HTTP DELETE
      * @throws Wercker4jException fault statusCode and IO error
      */
     protected void callDeleteAPI(HttpDelete httpDelete) throws Wercker4jException {
