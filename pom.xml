@@ -22,6 +22,13 @@
         <developerConnection>scm:git:git://github.com/yeahlol/wercker4j.git
         </developerConnection>
     </scm>
+    <developers>
+        <developer>
+            <id>yeahlol</id>
+            <name>Shinichi Hatakeyama</name>
+            <email>yeahlolllll@gmail.com</email>
+        </developer>
+    </developers>
     <distributionManagement>
         <repository>
             <id>sonatype-nexus-staging</id>
@@ -69,7 +76,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-gpg-plugin</artifactId>
-                        <version>1.5</version>
+                        <version>1.4</version>
                         <executions>
                             <execution>
                                 <id>sign-artifacts</id>
