@@ -5,7 +5,7 @@
     <groupId>org.wercker4j</groupId>
     <artifactId>wercker4j</artifactId>
     <packaging>jar</packaging>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <name>wercker4j</name>
     <description>A Java library for Wercker API</description>
     <url>http://wercker4j.org</url>
