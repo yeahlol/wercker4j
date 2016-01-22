@@ -29,12 +29,28 @@
       </header>
       <section>
         <h1>
-<a id="wercker4j" class="anchor" href="#wercker4j" aria-hidden="true"><span class="octicon octicon-link"></span></a>Wercker4J</h1>
+<a id="wercker4j" class="anchor" href="#wercker4j" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Wercker4J</h1>
 
-<p>Wercker4J is java client library for <a href="http://devcenter.wercker.com/api/index.html">wercker API</a>.</p>
+<p>Wercker4J is java client library for <a href="http://devcenter.wercker.com/api/index.html">wercker API</a>.<br>
+JavaDoc is <a href="http://www.javadoc.io/doc/org.wercker4j/wercker4j/1.0.0">here</a>.</p>
 
 <h2>
-<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+<a id="version" class="anchor" href="#version" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Version</h2>
+
+<p>1.0.0</p>
+
+<h2>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install</h2>
+
+<pre><code>&lt;dependency&gt;
+  &lt;groupId&gt;org.wercker4j&lt;/groupId&gt;
+  &lt;artifactId&gt;wercker4j&lt;/artifactId&gt;
+  &lt;version&gt;1.0.0&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
 
 <pre><code>// Create a new client
 String token = "..."
@@ -42,7 +58,7 @@ Wercker4jClient client = new Wercker4jClient(token);
 </code></pre>
 
 <h3>
-<a id="application" class="anchor" href="#application" aria-hidden="true"><span class="octicon octicon-link"></span></a>Application</h3>
+<a id="application" class="anchor" href="#application" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Application</h3>
 
 <pre><code>// Get a appliation detail
 String owner = "...";
@@ -54,7 +70,7 @@ List&lt;ApplicationSummary&gt; applicationList = client.getApplications(new GetA
 </code></pre>
 
 <h3>
-<a id="build" class="anchor" href="#build" aria-hidden="true"><span class="octicon octicon-link"></span></a>Build</h3>
+<a id="build" class="anchor" href="#build" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Build</h3>
 
 <pre><code>// Trigger a new build for an application
 String applicationId = "...";
@@ -71,7 +87,7 @@ List&lt;BuildSummary&gt; buildList = client.getBuilds(new GetBuildsOption(owner,
 </code></pre>
 
 <h3>
-<a id="deploy" class="anchor" href="#deploy" aria-hidden="true"><span class="octicon octicon-link"></span></a>Deploy</h3>
+<a id="deploy" class="anchor" href="#deploy" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Deploy</h3>
 
 <pre><code>// Get a deploy detail of an application
 String deployId = "...";
@@ -84,7 +100,7 @@ List&lt;DeploySummary&gt; deployList = client.getDeploys(new GetDeploysOption(ow
 </code></pre>
 
 <h3>
-<a id="token" class="anchor" href="#token" aria-hidden="true"><span class="octicon octicon-link"></span></a>Token</h3>
+<a id="token" class="anchor" href="#token" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Token</h3>
 
 <pre><code>// Trigger a new token
 String newTokenName = "...";
@@ -97,6 +113,11 @@ Token token = client.getToken(new GetTokenOption(tokenId));
 // Get all tokens
  List&lt;TokenSummary&gt; tokenList = client.getTokens();
 </code></pre>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
+
+<p>Please see <a href="https://github.com/yeahlol/wercker4j/blob/master/LICENSE.txt">LICENSE</a>.</p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/yeahlol">yeahlol</a></p>
