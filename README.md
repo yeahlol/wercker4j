@@ -1,6 +1,19 @@
 # Wercker4J
 
-Wercker4J is java client library for [wercker API](http://devcenter.wercker.com/api/index.html).
+Wercker4J is java client library for [wercker API](http://devcenter.wercker.com/api/index.html).<br>
+JavaDoc is [here](http://www.javadoc.io/doc/org.wercker4j/wercker4j/1.0.0).
+
+## Version
+1.0.0
+
+## Install
+```
+<dependency>
+  <groupId>org.wercker4j</groupId>
+  <artifactId>wercker4j</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
 
 ## Usage
 ```
@@ -62,3 +75,6 @@ Token token = client.getToken(new GetTokenOption(tokenId));
 // Get all tokens
  List<TokenSummary> tokenList = client.getTokens();
 ```
+
+## License
+Please see [LICENSE](https://github.com/yeahlol/wercker4j/blob/master/LICENSE.txt).
