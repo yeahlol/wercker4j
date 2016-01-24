@@ -1,4 +1,5 @@
 # Wercker4J
+[![wercker status](https://app.wercker.com/status/3d4135d4bb8386531ef55e817318b6bb/s "wercker status")](https://app.wercker.com/project/bykey/3d4135d4bb8386531ef55e817318b6bb)
 
 Wercker4J is java client library for [wercker API](http://devcenter.wercker.com/api/index.html).<br>
 JavaDoc is [here](http://www.javadoc.io/doc/org.wercker4j/wercker4j/1.0.0).
